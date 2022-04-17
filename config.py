@@ -14,7 +14,7 @@ OWNER_ID = int(os.getenv("OWNER_ID", "10"))
 DOWN_PATH = os.getenv("./downloads")
 SESSION = os.getenv("SESSION")
 HNDLR = os.getenv("HNDLR", "!")
-
+self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
 
 contact_filter = filters.create(
     lambda _, __, message:
